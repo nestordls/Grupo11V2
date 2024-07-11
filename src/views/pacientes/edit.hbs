@@ -1,0 +1,38 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">
+                        Modificar paciente
+                    </h3>
+                </div>
+                    <div class="card-body">
+                        <form action="/edit/{{pacientes.id}}" method="post">
+                        <div class="input-group mt-2">
+                            <label for="NombrePaciente" class="input-group-text">Nombre</label>
+                            <input class="form-control" type="text" name="NombrePaciente" id="NombrePaciente" value="{{pacientes.NombrePaciente}}" placeholder="Ejemplo: Carlos Perez" autofocus required>
+                        </div><div class="input-group mt-2">
+                            <label for="DocumentoPaciente" class="input-group-text">Documento</label>
+                            <input class="form-control" type="number" name="DocumentoPaciente" id="DocumentoPaciente" value="{{pacientes.DocumentoPaciente}}" placeholder="Ejemplo: 17777777" required>
+                        </div><div class="input-group mt-2">
+                            <label for="idPacientes" class="input-group-text">Id paciente</label>
+                            <input class="form-control" type="number" name="idPacientes" id="idPacientes" value="{{pacientes.idPacientes}}" placeholder="Ejemplo: 1"  required>
+                        </div>
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success">
+                                Actualizar
+                            </button>
+                        </div>
+
+
+
+
+                        </form>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>card-header
